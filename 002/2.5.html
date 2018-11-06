@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>First time Vue</title>
+
+<script src="https://unpkg.com/vue@2.5.17"></script>
+
+<div id="app">
+    <p>{{ items[0].name }}: {{items[0].price * items[0].quantity}}</p>
+    <p> フィルタ例：{{ 3000 | numberWithDelimiter}}</p>
+</div>
+
+<!-- -->
+<button id="b-button" v-bind:title="loggedInButton">購入</button>
+<script>
+    var vm = new Vue({
+        el: '#b-button',
+        data: {
+            loggedInButton: 'ログイン済みのため購入できます'
+        }
+    })
+</script>
+
+<!-- -->
+<button id="b-button2" v-bind:disables="!canBuy">購入</button>
+<script>
+    var vm = new Vue({
+        el: '#b-button2',
+        data: {
+            canBuy: 'false'
+        }
+    })
+</script>
+
+<script src="./app.js"></script>
