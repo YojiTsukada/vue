@@ -2,17 +2,17 @@ var items = [
     {
         name : '鉛筆',
         price : 300,
-        quantity : 10
+        quantity : 0
     },
     {
         name: 'ノート',
         price: 400,
-        quantity: 7
+        quantity: 0
     },
     {
         name: '消しゴム',
         price: 500,
-        quantity: 2
+        quantity: 0
     }
 ]
 
