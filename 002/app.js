@@ -7,12 +7,12 @@ var items = [
     {
         name: 'ノート',
         price: 400,
-        quantity: 0
+        quantity: 7
     },
     {
         name: '消しゴム',
         price: 500,
-        quantity: 0
+        quantity: 2
     }
 ]
 
